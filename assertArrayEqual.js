@@ -16,6 +16,3 @@ eqArray([1, 2, 3], [3, 2, 1]); // => false
 eqArray(["1", "2", "3"], ["1", "2", "3"]); // => true
 eqArray(["1", "2", "3"], ["1", "2", 3]); // => false
 
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); 
