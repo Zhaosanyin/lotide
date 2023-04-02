@@ -16,6 +16,8 @@ eqArray([1, 2, 3], [3, 2, 1]); // => false
 eqArray(["1", "2", "3"], ["1", "2", "3"]); // => true
 eqArray(["1", "2", "3"], ["1", "2", 3]); // => false
 
+
+// array.indexof(element) 这个使用的学习
 */
 
 function without(array1, array2) {
