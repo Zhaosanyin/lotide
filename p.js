@@ -57,27 +57,28 @@
 //   return counts;
 // }
 
-function analyzeString(str) {
-  let charCount = {};
-  let charPositions = {};
-  let index = 0;
-  for (let c of str) {
-    if (c !== ' ') {
-      if (charCount[c]) {
-        charCount[c]++;
-      } else {
-        charCount[c] = 1;
-      }
-      if (charPositions[c]) {
-        charPositions[c].push(index);
-      } else {
-        charPositions[c] = [index];
-      }
-    }
-    index++;
-  }
-  return { charCount: charCount, charPositions: charPositions };
-}
+// const firstNames = [
+//   "Karl",
+//   "Salima",
+//   "Agouhanna",
+//   "Fang",
+//   "Kavith",
+//   "Jason",
+//   "Salima",
+//   "Fang",
+//   "Joe"
+// ];
+// const myTest = function (arr) {
+//   for (let c in arr){
+//     if(arr[c]){
+//       console.log(arr[c]);
+//     }
+//   }
 
- console.log(analyzeString("zhaosanyin"));
+// }
+
+// console.log(myTest(firstNames));
+// console.log(firstNames[0]);
+// console.log(firstNames.Karl);
+
 
