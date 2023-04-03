@@ -26,16 +26,33 @@
 // array1 = [1,2,3,4];
 // console.log(array1);
 
-// 下面的函数有问题，但是引用在函数中就可以？
+// 下面的函数有问题，但是引用在函数中就可以？ 这个解决了。看chatgpt
 // function() {
 //   console.log("hello");
 // }
-const runMyFunction = function (callback) {
-  console.log("hello good morning");
-  callback();
-  console.log("hello good afternoon");
-}
+// const runMyFunction = function (callback) {
+//   console.log("hello good morning");
+//   callback();
+//   console.log("hello good afternoon");
+// }
 
-runMyFunction (function(){
-  console.log("hello good lunch");
-})
+// runMyFunction (function(){
+//   console.log("hello good lunch");
+// })
+
+// toCount = { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false };
+// toCountKey = Object.keys(toCount);
+// console.log(toCountKey);
+
+
+function countItems (arr) {
+  const counts = {};
+  for (const item of arr) {
+    if (counts[item]) {
+      counts[item] ++ ;
+    }else {
+      counts[item] =1;
+    }
+  }
+  return counts;
+}
