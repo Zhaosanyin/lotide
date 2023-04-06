@@ -82,3 +82,61 @@
 // console.log(firstNames.Karl);
 
 
+
+// const myFn = function (){
+//   console.log("I am function");
+// }
+
+// myFn.someAttribute = 42;
+// console.log(myFn.someAttribute);
+
+// function runner(f) {
+//   f();
+// }
+
+// runner(myFn);
+
+// const findWaldo = function(names, found) {
+//   for (let i = 0; i < names.length; i++) {
+//     let name = names[i];
+//     if (name === "Waldo") {
+//       found();   // execute callback
+//       console.log(` fund at ${i}`);
+//     }
+//   }
+// }
+
+// const actionWhenFound = function() {
+//   console.log("Found him!");
+// }
+
+// findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+
+
+
+// const sayHello = function (name){
+//   return "Hello," + name + "!"
+// };
+
+// console.log(
+// 'sayHello() output: ', 
+//  sayHello()
+
+//  );
+
+// let expected = "Hello, Luis!";
+// let actual = sayHello ('Luis');
+
+// console.log(
+//   'expected:', expected,
+//   'acutal:' , actual,
+//   'pass?', expected === actual
+// );
+
+
+const numbers = [1, 2, 3, 4, 5, 7, 10, 14, 17, 18];
+const even = numbers.filter(function(num) {
+  return num %2 === 0;
+})
+console.log(" subset of even numbers: ", even);
+

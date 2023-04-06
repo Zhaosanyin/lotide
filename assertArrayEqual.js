@@ -10,9 +10,9 @@ const assertArraysEqual = function(actual, expected) {
 
 //eqArray([1, 2, 3], [1, 2, 3]);
 
-eqArray([1, 2, 3], [1, 2, 3]); // => true
-eqArray([1, 2, 3], [3, 2, 1]); // => false
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
 
-eqArray(["1", "2", "3"], ["1", "2", "3"]); // => true
-eqArray(["1", "2", "3"], ["1", "2", 3]); // => false
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
 
