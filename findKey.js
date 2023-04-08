@@ -11,7 +11,6 @@ const findKey = function (obj, callback) {
   for (let key in obj) {
     if (callback(obj[key])) {   //it is no easy to understand why using it to judgement
       return key;
-
     }
   }  return undefined;
 }

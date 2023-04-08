@@ -18,3 +18,21 @@ const countLetters = function(str) {
 };
 
 console.log(countLetters("LHL"));
+
+
+//以下的更改是不对的。 str.item
+
+
+
+// const countLetters = function(str) {
+//   const result = {};
+//   for (let item of str) {
+//     if (result.item) {
+//       result.item ++;
+//     } else {
+//       result.item = 1;
+//     }
+//   } return result;
+// };
+
+// console.log(countLetters("LHL"));
