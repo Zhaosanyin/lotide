@@ -180,15 +180,16 @@
 // // console.log(tasks);
 
 
-class Pizza {
+// class Pizza {
 
-  constructor() {
-    this.topping = ["cheese"];
-  }
-  addTopping(topping) {
-    this.topping.push(topping);
-  }
-}
+//   constructor() {
+//     this.topping = ["cheese"];
+//   }
+//   addTopping(topping) {
+//     this.topping.push(topping);
+//   }
+// }
+
 // const p1 = new pizza;
 // console.log(p1);
 
@@ -200,9 +201,126 @@ class Pizza {
 
 
 
-let pizza1 = new Pizza();
-console.log(pizza1.topping);
-pizza1.addTopping("mushrooms");
-pizza1.addTopping("peppers");
-console.log(pizza1.topping);
+// let pizza1 = new Pizza();
+// console.log(pizza1.topping);
+// pizza1.addTopping("mushrooms");
+// pizza1.addTopping("peppers");
+// console.log(pizza1.topping);
+
+// const pizza1 = {
+//   toppings: ['cheese'],
+//   addTopping: function(topping){
+//     this.topping.push(topping);
+//   }
+// }
+
+// const pizza2 = {
+// topping: ['cheese'],
+// addTopping: function(topping){
+//   this.topping.push(topping);
+// }
+// }
+
+// class Student {
+//   // this constructor is identical to that of a mentor!
+//   constructor(name, quirkyFact) {
+//     this.name = name;
+//     this.quirkyFact = quirkyFact;
+//   }
+
+//   // here is a method that is specific to students
+//   enroll(cohort) {
+//     this.cohort = cohort;
+//   }
+
+//   // identical! Smells of code duplication
+//   bio() {
+//     return `My name is ${this.name} and here's my quirky fact: ${this.quirkyFact}`;
+//   }
+// }
+
+// class Mentor {
+//   // this constructor is identical to that of a student!
+//   constructor(name, quirkyFact) {
+//     this.name = name;
+//     this.quirkyFact = quirkyFact;
+//   }
+
+//   // specific to mentors
+//   goOnShift() {
+//     this.onShift = true;
+//   }
+
+//   // specific to mentors
+//   goOffShift() {
+//     this.onShift = false;
+//   }
+
+//   // identical! Smells of code duplication
+//   bio() {
+//     return `My name is ${this.name} and here's my quirky fact: ${this.quirkyFact}`;
+//   }
+// }
+
+// class Person {
+//   constructor (name, quikyFact) {
+//     this.name = name;
+//     this.quikyFact = quikyFact;
+//   }
+//   Bio() {
+//     return `My name is ${this.name} and here's my quiky fact: ${this.quirkyFact}`;
+//   }
+// }
+
+// class Student extends Person {
+//   enroll(corhort) {
+//     this.corhort = corhort;
+//   }
+// }
+
+// class Mentor extends Person {
+//   goOnShift(){
+//     this.goOnShift = true;
+//   }
+//   goOffShift(){
+//     this.goOffShift = false;
+//   }
+
+// }
+
+// now there is general
+
+// class Pizza {
+//   constructor() {
+//     this.topping = ["cheese"];
+//   }
+  
+//   addTopping(topping) {
+//     this.topping.push(topping);
+//   }
+// }
+
+// class SpecialPizza extends Pizza {
+//   constructor() {
+//     super();
+//     super.topping = ["mushrooms"]; // 更改 super 的 topping 属性
+//   }
+// }
+
+// const mySpecialPizza = new SpecialPizza();
+// mySpecialPizza.addTopping("sausage");
+// console.log(mySpecialPizza);
+
+
+class Pizza {
+
+  constructor(){
+    this.toppings = "";
+  }
+}
+
+let pizza = new Pizza ();
+
+pizza.toppings = pizza.toppings + 'cheese';
+pizza.toppings = pizza.toppingss + ", mushrooms";
 
