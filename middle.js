@@ -36,11 +36,14 @@ function middle(arr) {
   }
 }
 
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [1, 2, 3, 4, 5, 6];
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [1, 2, 3, 4, 5, 6];
 
-console.log(middle(arr1)); // [3]
-console.log(middle(arr2)); // [3, 4]
+// console.log(middle(arr1)); // [3]
+// console.log(middle(arr2)); // [3, 4]
 
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+// console.log(middle([1, 2, 3, 4])) // => [2, 3]
+// console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+
+
+module.exports = middle;
