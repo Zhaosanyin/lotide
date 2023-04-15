@@ -9,15 +9,15 @@ const assertEqual = function(actual, expected) {
 //   }
 // };
 
-if (actual === expected) {
-  return console.log(String.fromCodePoint('0x2705') + "Assertion Passed:" + actual + " === " + expected);
-} else {
-  return(console.log(String.fromCodePoint('0x274c') + "Assertion failed:" + actual + " !=== " + expected))
-}
+  if (actual === expected) {
+    return console.log(String.fromCodePoint('0x2705') + "Assertion Passed:" + actual + " === " + expected);
+  } else {
+    return (console.log(String.fromCodePoint('0x274c') + "Assertion failed:" + actual + " !=== " + expected));
+  }
 };
 
 
-//console.assert(assertEqual("lighthouse", "lighthouse"));
+console.assert(assertEqual("lighthouse", "lighthouse"));
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
