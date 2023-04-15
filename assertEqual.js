@@ -17,12 +17,12 @@ const assertEqual = function(actual, expected) {
 };
 
 
-console.assert(assertEqual("lighthouse", "lighthouse"));
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual(1, 7);
+// console.assert(assertEqual("lighthouse", "lighthouse"));
+// // TEST CODE
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
+// assertEqual("Lighthouse Labs", "Lighthouse Labs");
+// assertEqual(1, 7);
 
 module.exports = assertEqual;
 
