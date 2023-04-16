@@ -29,9 +29,9 @@ const tail = function(arr) {
 };
 
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-console.log(result);
-assertArraysEqual(result, ["Lighthouse", "Labs"]);
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// console.log(result);
+//  assertArraysEqual(result, ["Lighthouse", "Labs"]);
 
 
 /*  TEST CODE
